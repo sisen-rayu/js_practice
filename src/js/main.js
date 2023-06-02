@@ -5,6 +5,7 @@ $countBox.innerHTML = count;
 
 const timer = setInterval(() => {
     if(count >= 5) {
+        clearInterval(timer);
         count = 0;
     } else {
       count++;
